@@ -2,7 +2,7 @@
 
 <pre>
 * (HEAD -> main) <a href="">Week 1: TBA</a>
-* <a href="/week0">Week 0: Pre-GSoC aphorisms</a>
+* <a href="/gitnotes/week0">Week 0: Pre-GSoC aphorisms</a>
 </pre>
 
 ## Git Development Starting Points
