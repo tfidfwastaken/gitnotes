@@ -14,7 +14,7 @@ I did figure out some of these. The other 'customs' I'll know about soon enough,
 
 I have spent this week trying to increase my presence in the mailing list (to mixed results), and more importantly, bring some structure to my work and plan so that I don't squander away my time and effort.
 
-I am going to start my work on converting `submodule add` to C. The good news is that I already have Shourya's stalled patch as an excellent reference for how I can begin my work. Reading it this week has helped me understand the Git way of doing operations (for the lack of a better phrase), like knowing the functions that I can use for the shell conversions, the way strings are handled, etc.
+I am going to start my work on converting `submodule add` to C. The good news is that I already have Shourya's work-in-progress patch as an excellent reference for how I can begin my work. Reading it this week has helped me understand the Git way of doing operations (for the lack of a better phrase), like knowing the functions that I can use for the shell conversions, the way strings are handled, etc.
 
 While I will end up heavily adapting Shourya's work. One major distinction would be in how I divide it up. Shourya's patches for `submodule add` back in the day faced two challenges:
 
