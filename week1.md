@@ -8,9 +8,9 @@ Even with the friendliness and the guidance that I have received so far, I still
 
 It's always the small, seemingly silly things -- How much should I omit when quoting someone in a reply? Is it worth CCing this person for a question, or am I creating a distraction? If someone responds to me, would sending a mail just to acknowledge that response add noise to the mailing list? If it ever comes to it, how do I acknowledge other people's code if my patch adapts from their work? [1]
 
-I did figure out some of these. The other 'customs' I'll know about soon enough, but I'll know I would feel a lot more at home the day I don't think about these things when working with Git. Till then it is a lot of trying, occasionally stumbling, and then becoming better at it. The craft is paramount.
+I did figure out some of these. The other 'customs' I'll know about soon enough, but I'll know I would feel a lot more at home the day I don't think about these things when working with Git. Till then it is a lot of trying, stumbling, and then becoming better at it. The craft is paramount.
 
-## My GSoC Plan
+## My Next Steps
 
 I have spent this week trying to increase my presence in the mailing list (to mixed results), and more importantly, bring some structure to my work and plan so that I don't squander away my time and effort.
 
@@ -81,5 +81,5 @@ make configure
 
 After it has configured properly you should be able to build it with `make`. I hope this helps someone who needs it.
 
-[^1] My Gen-Z is showing really strongly here.
+[^1] My Gen-Z is showing really strongly here.  
 [^2] https://lore.kernel.org/git/xmqqlfdy7niy.fsf@gitster.c.googlers.com/
