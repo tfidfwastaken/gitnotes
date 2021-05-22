@@ -1,7 +1,7 @@
 # Weekly Reports
 
 <pre>
-* (HEAD -> main) <a href="">Week 1: TBA</a>
+* (HEAD -> main) <a href="/gitnotes/week1">Week 1: Getting acclimatised, patch plans, Emacs setup and fixing macOS build errors</a>
 * <a href="/gitnotes/week0">Week 0: Pre-GSoC aphorisms</a>
 </pre>
 

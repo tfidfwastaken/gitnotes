@@ -1,4 +1,4 @@
-# Week 0: What helped me start contributing to Git, distilled into Aphorisms
+# Week 0: What helped me start contributing to Git, distilled into aphorisms
 
 This is my Git contribution log as a part of [my GSoC project](https://summerofcode.withgoogle.com/projects/#4754589292691456).
 
