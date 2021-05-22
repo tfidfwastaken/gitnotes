@@ -46,9 +46,9 @@ When I first tried contributing to Git after recently switching from a Linux mac
             ^
 ```
 
-Turns out this is a header used by the gettext library that is used for internationalization. Unfortunately, from what I gathered, libintl is a part of glibc, while Macs (and BSDs, where I believe the same error would happen) give us libc as the standard library for C. The initial workaround was to just run `make configure && ./configure` which would disable internationalization and allow Git to compile. But I did not feel fully satisfied by this. I think it is important that people on Macs should be also be able to work with translating and internationalizing.
+Turns out this is a header used by the gettext library that is used for internationalization. Unfortunately, from what I gathered, libintl is a part of glibc, while Macs (and BSDs, where I believe the same error would happen) give us libc as the standard library for C. The initial workaround was to just run `make configure && ./configure` which would disable internationalization and allow Git to compile. But I did not feel fully satisfied by this. I think it is important that people on Macs should be also be able to work on internationalization.
 
-After some fiddling, this is solution worked for me, which is fairly non-destructive and lets me compile with libintl:
+After some fiddling, this solution worked for me, which is fairly non-destructive and lets me compile with libintl:
 
 (Assuming you use homebrew) Install gettext:
 ```
