@@ -50,7 +50,7 @@ Turns out this is a header used by the gettext library that is used for internat
 
 After some fiddling, this solution worked for me, which is fairly non-destructive and lets me compile with libintl:
 
-(Assuming you use homebrew) Install gettext:
+(Assuming you use homebrew) Install `gettext`:
 ```
 brew install gettext
 ```
@@ -69,17 +69,18 @@ find /opt -name "libintl.*" -print
 /opt/homebrew/Cellar/gettext/0.21/lib/libintl.a
 ```
 
-Note the location of the gettext directories.
+Note the location of the homebrew `lib` and `include` directories.
 
-Now run the following (it might slightly differ if your CFLAGS and LDFLAGS are already set. Just ensure the gettext paths are included with whatever else is already there):
-
-```
-make configure
-./configure "LDFLAGS=$LDFLAGS -L/opt/homebrew/Cellar/gettext/0.21/lib" \
-     "CFLAGS=-I/opt/homebrew/Cellar/gettext/0.21/include"
+Append the following to a `config.mak` file in the project root:
+```makefile
+DEVELOPER=1
+LDFLAGS='-L/opt/homebrew/lib'
+CFLAGS='-I/opt/homebrew/include'
 ```
 
 After it has configured properly you should be able to build it with `make`. I hope this helps someone who needs it.
+
+Acknowledgement: Thanks to Philippe Blain and Bagas Sanjaya who helped improve my solution to the missing header.
 
 [^1] My Gen-Z is showing really strongly here.  
 [^2] https://lore.kernel.org/git/xmqqlfdy7niy.fsf@gitster.c.googlers.com/
