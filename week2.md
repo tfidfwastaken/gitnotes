@@ -1,8 +1,10 @@
 # Week 2: In praise of leaving things behind
 
-A lot of what I do is built on top of what other people leave behind. Some things left behind are done so deliberately, while others are just an accident of history. There's always much to learn from both.
+Everything I do is built on top of the corpus of knowledge left behind by others. Some people leave things behind deliberately, while others do so unintentionally.
 
-My work with Git this week is made possible by a combination of both. I had to use several functions from Git's `strbuf` API, `strvec` API and `run-command` API, all documented as comments in their respective header files in the top level. Those comments were the work left behind of many contributors in the past. A deliberate attempt knowing that some new developer many years down the line will be able to get their first start to the Git project, and maybe even their career.
+There's always much to learn from both.
+
+My work with Git this week was made possible by a combination of both kinds of knowledge. I had to use several functions from Git's `strbuf` API, `strvec` API and `run-command` API, all documented as comments in their respective header files in the top level. These comments were the work of many contributors in the past. A deliberate attempt, knowing that some new developer many years down the line will be able to get their first start to the Git project, and maybe even their career.
 
 ### Putting cherries on top of someone else's cake
 
@@ -20,7 +22,7 @@ I want to leave things behind for people who I don't know, in a time far into th
 
 ### Blooper of the week
 
-In the spirit of Git being "the stupid content tracker", I have decided to actually live up to that phrase and keep a track of my stupid moments in this section of my weekly reports, in the hopes that there is something here for someone to learn from.
+In the spirit of Git being "the stupid content tracker", I have decided to actually live up to that phrase and keep a track of my stupid moments in this section of my weekly reports, in the hopes that there is something here to learn from.
 
 This week had one spectacular incident. I was getting a segfault when trying to parse tokens out of a memory buffer that contained output from `git remote -v`. I wanted to move my pointer upto the first whitespace or newline, and my output was a whole bunch of garbage output followed by a segfault.
 
@@ -28,16 +30,16 @@ Here's an approximation of that code:
 ```c
 static char *parse_token(char **begin, const char *end)
 {
-    /* ... */
+	/* ... */
 	while (pos != end && (*pos != ' ' || *pos != '\t' || *pos != '\n'))
 		pos++;
-    /* ... */
+ 	/* ... */
 }
 ```
 
-For whatever reason, I thought of the most complicated explanations, without really thinking about the fact that they made no sense: "Is the memory buffer not having tab separated tokens? Are they separated by some special whitespace character??"
+For whatever reason, I thought of the most convoluted explanations, not realising that they actually don't make any sense. Thoughts like: "Is the memory buffer not having tab separated tokens? Are they separated by some special whitespace character??"
 
-Taking that half baked thought, I piped my output to `xxd` and observed the hex codes individually hoping to find a discrepancy. There was none of course.
+Taking that half baked thought, I piped my output to `xxd` and observed the actual bytecodes of the buffer hoping to find a discrepancy. There was none of course.
 
 Now you, the reader may have already figured it out – the conditions for checking the value of `(*pos = ...` should have been separated by `&&`s. Because they were not, my pointer ended up scurrying off all the way to the `end` which caused other problems down the line and blew up my code.
 
