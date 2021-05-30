@@ -8,7 +8,7 @@ My work with Git this week was made possible by a combination of both kinds of k
 
 ### Putting cherries on top of someone else's cake
 
-The other bulk of my work this week was possible only due to "historical accidents", that is breadcrumbs left behind by people in the past. The patch that I ended up sending this week is heavily based on the work of two generations of GSoC programmers who struggled over this problem. Thanks to this, my work felt like putting a cherry on top of someone else's cake.
+Another major portion of my work this week was possible only due to "historical accidents", that is breadcrumbs left behind by people in the past. The patch that I ended up sending this week is heavily based on the work of two generations of GSoC programmers who struggled over this problem. Thanks to this, my work felt like putting a cherry on top of someone else's cake. I finally got my patch out this week, and I'm waiting for my first set of reviews.
 
 I studied Shourya's stalled patch, parts of which had already been reviewed. Many of the developers who reviewed his code would not have known that someone in the future would learn from their comments and benefit from it, in ways that went beyond the patch at hand. For those reviewers it was just another day at work.
 
