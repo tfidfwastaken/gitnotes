@@ -4,13 +4,13 @@ Everything I do is built on top of the corpus of knowledge left behind by others
 
 There's always much to learn from both.
 
-My work with Git this week was made possible by a combination of both kinds of knowledge. I had to use several functions from Git's `strbuf` API, `strvec` API and `run-command` API, all documented as comments in their respective header files in the top level. These comments were the work of many contributors in the past. A deliberate attempt, knowing that some new developer many years down the line will be able to get their first start to the Git project, and maybe even their career.
+My work with Git this week was made possible by a combination of both kinds of knowledge. I had to use several functions from Git's [`strbuf`](https://github.com/git/git/blob/master/strbuf.h) API, [`strvec`](https://github.com/git/git/blob/master/strvec.h) API and [`run-command`](https://github.com/git/git/blob/master/run-command.h) API, all documented as comments in their respective header files in the top level. These comments were the work of many contributors in the past. A deliberate attempt, knowing that some new developer many years down the line will be able to get their first start to the Git project, and maybe even their career.
 
 ### Putting cherries on top of someone else's cake
 
 Another major portion of my work this week was possible only due to "historical accidents", that is breadcrumbs left behind by people in the past. The patch that I ended up sending this week is heavily based on the work of two generations of GSoC programmers who struggled over this problem. Thanks to this, my work felt like putting a cherry on top of someone else's cake. I finally got my patch out this week, and I'm waiting for my first set of reviews.
 
-I studied Shourya's stalled patch, parts of which had already been reviewed. Many of the developers who reviewed his code would not have known that someone in the future would learn from their comments and benefit from it, in ways that went beyond the patch at hand. For those reviewers it was just another day at work.
+I studied Shourya's stalled patch, parts of which had already been reviewed [1, 2]. Many of the developers who reviewed his code would not have known that someone in the future would learn from their comments and benefit from it, in ways that went beyond the patch at hand. For those reviewers it was just another day at work.
 
 These breadcrumbs of the less deliberate kind are in no way inferior – people cannot always foresee what will be helpful to others in the future.
 
@@ -44,3 +44,9 @@ Taking that half baked thought, I piped my output to `xxd` and observed the actu
 Now you, the reader may have already figured it out – the conditions for checking the value of `(*pos = ...` should have been separated by `&&`s. Because they were not, my pointer ended up scurrying off all the way to the `end` which caused other problems down the line and blew up my code.
 
 Lesson learnt: Always do the sanity checks first. The reason your program did not work is probably one of the more easily explainable reasons.
+
+
+### Footnotes and links
+
+[1] Shourya's original patch: https://public-inbox.org/git/20201214231939.644175-1-periperidip@gmail.com/  
+[2] My patch based that I sent this week: https://public-inbox.org/git/20201214231939.644175-1-periperidip@gmail.com/  
