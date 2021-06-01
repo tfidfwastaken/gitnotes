@@ -7,6 +7,10 @@ $ gitnotes log --graph --oneline
 * <a href="/gitnotes/week0">Week 0: Pre-GSoC aphorisms</a>
 </pre>
 
+## My public git.git branches
+
+Contains work on submodule add: https://github.com/tfidfwastaken/git/tree/submodule-add-in-c
+
 ## Git Development Starting Points 🏁
 
 - [Git Book's chapter on the internals](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain) -- Essential!
