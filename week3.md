@@ -62,7 +62,7 @@ I wanted an end result that looked like:
 
 That is, to preserve the original branch states of (A) and (B), so that I can preserve 'snapshots' of how those changes were, when applied independently.
 
-Simple enough, I thought. Just fast-forward merge (A) on master, and then, uhh, cherry pick and apply (B) on top of the newly merged (A). Resolve any conflict in this stage. That way I get (A) and (B) in their pristine individuality, as well as a third branch that combines both the changes.
+Simple enough, I thought. Just fast-forward merge (A) on a new temporary branch based off master, and then, uhh, cherry pick and apply (B) on top of the newly merged (A). Resolve any conflict in this stage. That way I get (A) and (B) in their pristine individuality, as well as a third branch that combines both the changes.
 
 I thought the merge conflict would be fairly easy to deal with.
 
