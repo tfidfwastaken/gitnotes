@@ -15,9 +15,8 @@ Since then, I got  [suggestions](https://lore.kernel.org/git/CAP8UFD01-VJpUEGg3c
 I also finished my next patch, which was to introduce another helper, called `git submodule--helper add-config` that handles the configuration on adding the submodules.
 
 Back in week 2, I had said this:
-```
-I have not yet fully understood how config handling generally works, and there's a case of a valueless value that, from what I can tell, was not handled in Shourya's patch.
-```
+
+> I have not yet fully understood how config handling generally works, and there's a case of a valueless value that, from what I can tell, was not handled in Shourya's patch.
 
 I am glad to say, I _mostly_ understand the config part of the code now. My initial difficulty back then was because of a config variable called `active`. Or more specifically there are two configuration variables with that name, one called `submodule.<name>.active` and `submodule.active`. Past me had missed this distinction, and thus had sent my two brain cells on a motorized merry-go-round. Now I know – the former is a switch to turn on a submodule, and the latter option can be a series of pathspecs (like regex, they are pattern matching strings) that activate all submodules matching a pathspec. An empty pathspec, ie, valueless value, is an error in configuration. I added a warning so that when a submodule is activated, the user knows that the pathspec has not been used and Git has activated the `submodule.<name>.active` switch instead.
 
