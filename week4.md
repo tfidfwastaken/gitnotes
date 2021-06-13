@@ -27,6 +27,7 @@ else
 	git ls-files -s "$sm_path" | sane_grep -v "^160000" > /dev/null 2>&1 &&
 	die "$(eval_gettext "'\$sm_path' already exists in the index and is not a submodule")"
 	fi
+fi
 ```
 
 Usually there's an equivalent C function I can find to do most things so far, but to my surprise, I could not find a function that checks whether a given path already exists in the index. It really needs to satisfy these criteria:
