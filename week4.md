@@ -78,7 +78,7 @@ This of course, opens up a dangerous rabbit-hole of thoughts. The feeling of bei
 
 I'd like to emphasize that the second point is why I am so excited to work with Git. I almost feel like I have learnt more useful skills in these four weeks than I would at an year in a University (of the level in my vicinity). This whole thing is unusually out of my comfort zone, and yet I feel at home doing this. The technical challenge is something that I have been craving for a really long time, and this is really satisfying that for me.
 
-Really, a big thanks to the Git community for doing this. There are many students across the world with poor access to good quality education (knowledge is thankfully very abundant, thanks to the internet) and high quality hands-on experience. Going out of your way to mentor students in a project of this quality is a big deal.
+Really, a big thanks to the Git community for doing this. There are many students across the world with poor access to good quality education (knowledge is very abundant, thanks to the internet) and high quality hands-on experience. Going out of your way to mentor students in a project of this quality is a big deal.
 
 ### On obviousness
 
