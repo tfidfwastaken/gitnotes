@@ -19,13 +19,13 @@ Junio also gave me a helpful review, and [rightly pointed out](https://lore.kern
 There is this bit of code that has been giving me a hard time:
 
 ```shell
-	if test -z "$force"
-	then
-		git ls-files --error-unmatch "$sm_path" > /dev/null 2>&1 &&
-		die "$(eval_gettext "'\$sm_path' already exists in the index")"
-	else
-		git ls-files -s "$sm_path" | sane_grep -v "^160000" > /dev/null 2>&1 &&
-		die "$(eval_gettext "'\$sm_path' already exists in the index and is not a submodule")"
+if test -z "$force"
+then
+	git ls-files --error-unmatch "$sm_path" > /dev/null 2>&1 &&
+	die "$(eval_gettext "'\$sm_path' already exists in the index")"
+else
+	git ls-files -s "$sm_path" | sane_grep -v "^160000" > /dev/null 2>&1 &&
+	die "$(eval_gettext "'\$sm_path' already exists in the index and is not a submodule")"
 	fi
 ```
 
@@ -72,10 +72,10 @@ As a consequence of working in a project of such importance, the developers I am
 
 This of course, opens up a dangerous rabbit-hole of thoughts. The feeling of being the least competent person in the room is not a pleasant one. So to remind myself, and those of you reading this who might be in a position similar to mine in the future:
 
-- The Git community (or any other community for that matter) did not choose you to work on this problem because you will be extremely efficient. It is true that they can do what we are doing in a fraction of the time. The reason they are doing this is to grow and diversify the community – an investment into their future. Your role is not an additive role, it is a multiplicative one. Use the platform you are given to help your peers break into Open Source, and build their careers, while making software better for everyone.
+- My understanding is that the Git community (or any other community for that matter) did not choose you to work on this problem because you will be extremely efficient. It is true that they can do what we are doing in a fraction of the time. The reason they are doing this is to grow and diversify the community – an investment into their future. Your role is not an additive role, it is a multiplicative one. Use the platform you are given to help your peers break into Open Source, and build their careers, while making software better for everyone.
 - Reframe your situation (a classic Stoic trick). Yes, you will be less accomplished and technically weaker than others in the community, and that means you will improve in a way you couldn't otherwise. Being the smartest person in the room will not make you smarter, but being the stupidest one will level you up greatly.
 
-I'd like to emphasize that the second point is why I am so excited to work with Git. I almost feel like I have learnt more useful skills in these 4 weeks than I would at an year in a University (of the level in my vicinity). This whole thing is unusually out of my comfort zone, and yet I feel at home doing this. The technical challenge is something that I have been craving for a really long time, and this is really satisfying that for me.
+I'd like to emphasize that the second point is why I am so excited to work with Git. I almost feel like I have learnt more useful skills in these four weeks than I would at an year in a University (of the level in my vicinity). This whole thing is unusually out of my comfort zone, and yet I feel at home doing this. The technical challenge is something that I have been craving for a really long time, and this is really satisfying that for me.
 
 Really, a big thanks to the Git community for doing this. There are many students across the world with poor access to good quality education (knowledge is thankfully very abundant, thanks to the internet) and high quality hands-on experience. Going out of your way to mentor students in a project of this quality is a big deal.
 
@@ -87,16 +87,17 @@ I was also being a lazy oaf. The old link directly opened the webchat with #git-
 
 Emily was quick to correct me on [this](https://lore.kernel.org/git/YL+ndHSLowy%2FqyZV@google.com/). It occurred to me the idea of things being obvious is extremely relative, and people's knowledge of things do not overlap. 
 
-This reminds me of a [paper](https://link.springer.com/article/10.3758/s13428-012-0307-9/tables/1) that supports this view really well. A lot of what is considered "general knowledge" is not known to most people. In this research paper a pop quiz was conducted with 300 questions, of increasing difficulty. Only for 45 of those questions did the majority answer correctly. This is not because people are stupid, it is because knowledge is highly contextual and dependent on a person's background. You may find a lot of questions in that obvious, and be surprised to know that not many knew the answer to it. And this is coming from a narrow population of American University students. Apply this to the diversity of this whole planet, and I would imagine the amount of common knowledge would be really low.
+This reminds me of a [paper](https://link.springer.com/article/10.3758/s13428-012-0307-9/tables/1) that supports this view really well. A lot of what is considered "general knowledge" is not known to most people. In this research paper, a pop quiz was conducted with 300 questions, of increasing difficulty. Only for 45 of those questions did the majority answer correctly. This is not because people are stupid, it is because knowledge is highly contextual and dependent on a person's background. You may find a lot of questions in that obvious, and be surprised to know that not many knew the answer to it. And this is coming from a narrow population of American University students. Apply this to the diversity of this whole planet, and I would imagine the amount of common knowledge would be really low.
 
 This is an important lesson – _never_ assume something is obvious just because it is known by you or the people in your circles.
 
 Which also brings me to a practice that is common in the Git community, especially when reviewing patches. I am guilty of this as well.
 
 Often when soemone makes a typo, people in the community correct it by replying like this:
-> atharva said:
-> > Often when soemone makes a typo 
-> s/soemone/someone/
+```
+> Often when soemone makes a typo
+s/soemone/someone/
+```
 
 Now that I think of it, this form is not obvious at all. In fact I am in the minority in using vi keybindings (or `sed`?), in my generation. When a correction like that is made, it assumes knowledge about this specialized tool, one that is not essential to actually participate and contribute to Git.
 
@@ -107,10 +108,11 @@ I am not advocating sacrificing internal culture for diversity. A common lingo h
 So if someone new does hop on the mailing list, I have decided that if I want to correct a typo, I will try to make it clear as to what that form means.
 
 Maybe something like this?
-> atharva said:
-> > Often when soemone makes a typo 
-> I see a typo there, it should be 'someone'.
-> s/soemone/someone/ ;-)
+```
+> Often when soemone makes a typo
+I see a typo there, it should be 'someone'.
+s/soemone/someone/ ;-)
+```
 
 It should go without saying, but this is ultimately a small step. There almost always are much bigger and more actionable things to improve contributor involvement. In my experience, some communities do the small and easy steps like these, and stop at that, because it is deceptively easy to fall into a pattern of thinking that they have removed impediments to contribution.
 
