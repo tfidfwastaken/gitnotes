@@ -74,8 +74,14 @@ Note the location of the homebrew `lib` and `include` directories.
 Append the following to a `config.mak` file in the project root:
 ```makefile
 DEVELOPER=1
-LDFLAGS='-L/opt/homebrew/lib'
-CFLAGS='-I/opt/homebrew/include'
+LDFLAGS+='-L/opt/homebrew/lib'
+CFLAGS+='-I/opt/homebrew/include'
+
+### Useful for debugging
+# helps sometimes when debugging
+# CFLAGS+= -O0
+# If you use clang, use this to detect memory errors. Extremely helpful.
+# SANITIZE=address
 ```
 
 After it has configured properly you should be able to build it with `make`. I hope this helps someone who needs it.
