@@ -12,7 +12,7 @@ I got reviews from several developers. Danh [reviewed my patch](https://lore.ker
 
 I didn't need to find a good way to parse tokens. I needed to display fetch remotes.
 
-Junio also gave me a helpful review, and [rightly pointed out](https://lore.kernel.org/git/xmqqim2l3p92.fsf@gitster.g/) the needless parsing and unparsing that was being done to call `module_clone()`. I am working on factoring out that function to separate the parsing of flags from the core logic. It's almost done, and a reroll should be out by tomorrow.
+Junio also gave me a helpful review, and [rightly pointed out](https://lore.kernel.org/git/xmqqim2l3p92.fsf@gitster.g/) the needless parsing and unparsing that was being done to call `module_clone()`. I am working on factoring out that function to separate the parsing of flags from the core logic. It's almost done, and a reroll should be out tomorrow.
 
 ### Current obstacles
 
