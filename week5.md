@@ -1,6 +1,6 @@
 # Week 5: A nice round-ish number
 
-## Project Progress: What's Cooked in my personal git.git
+# Project Progress: What's Cooked in my personal git.git
 
 Since 5 is a nice round-ish number, I thought now would be a good time to summarise *everything* I have done so far, and then talk about what's cooking in my personal git.git.
 
@@ -28,7 +28,7 @@ And my conversion seemed to have worked well--all the test cases passed, includi
 
 Getting your code to work after sincere, raw effort is one of those joys right up there with [good food](https://upload.wikimedia.org/wikipedia/commons/3/35/Biryani_Home.jpg).
 
-### Some challenges with the changes that are cooking
+## Some challenges with the changes that are cooking
 
 While my complete conversion the bulk of `cmd_add()` seems to work, there's one part of it that bothers me a bit.
 
@@ -80,13 +80,13 @@ I am not sure about what *exactly* are their differences, and when is one varian
 
 Consider this the classic case of "my code seems to work, but I don't know why". Bah.
 
-## Reflections
+# Reflections
 
 I'm starting to realise how quickly your work can get stalled, and how, just as quickly, you can make a lot of progress. At least in the way I operate, progress is not a steadily increasing straight line, but a spiky erratic line that generally trends upwards.
 
 So to those in a similar position, who will read this in the future--don't let the spikes around your immediate neighbourhood sway you mentally. Just work towards the larger upward trend, and stick to sound methods of analysing what made your code not work, and solve your problems patiently. That has served me well so far.
 
-### Blooper of the week
+## Blooper of the week
 
 Well I forgot to include this section last week, but it was kind of implicit with my ["it's obvious" debacle](http://atharvaraykar.me/gitnotes/week4#on-obviousness).
 
