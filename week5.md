@@ -90,7 +90,7 @@ So to those in a similar position, who will read this in the future--don't let t
 
 Well I forgot to include this section last week, but it was kind of implicit with my ["it's obvious" debacle](http://atharvaraykar.me/gitnotes/week4#on-obviousness).
 
-Well this week, I had a small blooper. To quote the [MyFirstContribution](https://git-scm.com/docs/MyFirstContribution) documentation:
+This week, I had a small blooper. To quote the [MyFirstContribution](https://git-scm.com/docs/MyFirstContribution) documentation:
 
 > While you’re looking at the email, you should also note who is CC’d, as it’s common practice in the mailing list to keep all CCs on a thread.
 
