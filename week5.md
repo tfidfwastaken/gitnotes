@@ -33,7 +33,7 @@ Getting your code to work after sincere, raw effort is one of those joys right u
 While my complete conversion the bulk of `cmd_add()` seems to work, there's one part of it that bothers me a bit.
 
 Here's the logic of the part that checks whether a particular path exists in the index or not:
-```C
+```c
 /*
  * I should be checking the return value,
  * but for the sake of this example, let's
