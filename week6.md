@@ -6,7 +6,7 @@ This week I made some refinements to my [submodule add patch](https://github.com
 
 It's been a busy week for the Git list, and with the maintainer being offline this week, my [last patch](https://lore.kernel.org/git/20210615145745.33382-1-raykar.ath@gmail.com/) on the list has not not yet got too much attention. In these times, it's best to be patient. I have been advised by my mentors to wait until the next "What's cooking..." mail[^1], and take action accordingly.
 
-So while that is blocked at the moment, I decided to start work on the other major part of my project, that is to convert `submodule update` to C, much in the same way. This functionality is a lot more interesting and complex compared to merely adding a submodule, and it can often be a source of [strange behaviour])(https://lore.kernel.org/git/CAKjYmsELpf9r3bAJj_JUHgVegw_7z2KzyuR_6FYYngpC1XmNeg@mail.gmail.com/) and edge cases.
+So while that is blocked at the moment, I decided to start work on the other major part of my project, that is to convert `submodule update` to C, much in the same way. This functionality is a lot more interesting and complex compared to merely adding a submodule, and it can often be a source of [strange behaviour](https://lore.kernel.org/git/CAKjYmsELpf9r3bAJj_JUHgVegw_7z2KzyuR_6FYYngpC1XmNeg@mail.gmail.com/) and edge cases.
 
 What makes my life easier though, is that a lot of the hard parts [have already been converted](https://lore.kernel.org/git/?q=submodule+update+dfn%3Asubmodule--helper.c+f%3A%22Stefan+Beller%22+&r=) to helper subcommands by Stefan Beller in the past.
 
@@ -41,7 +41,7 @@ On the whole, this week felt slower than I'd have liked, but the project is stil
 Occasionally, I like casually touring the Git codebase. This time, I wanted to find out the entry point of all Git commands, and I was left a puzzled man.
 
 The entry point of Git is not in `git.c` as you may expect (although it was at one point), but in `common-main.c`. For reference, this is Git's (truncated) `main()` function:
-```C
+```c
 int main(int argc, const char **argv)
 {
 	...
