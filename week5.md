@@ -60,7 +60,7 @@ if (ps.nr) {
 			if (!force)
 				die(_("'%s' already exists in the index"),
 				    path);
-			else if (!S_ISGITLINK(active_cache[i]->ce_mode))
+			if (!S_ISGITLINK(active_cache[i]->ce_mode))
 				die(_("'%s' already exists in the index "
 				      "and is not a submodule"), path);
 			break;
