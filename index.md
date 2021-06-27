@@ -2,7 +2,8 @@
 
 <pre>
 $ gitnotes log --graph --oneline
-* (HEAD -> main) <a href="/gitnotes/week5">Week 5: A nice round number</a>
+* (HEAD -> main) <a href="/gitnotes/week5">Week 6: On to update</a>
+* <a href="/gitnotes/week5">Week 5: A nice round number</a>
 * <a href="/gitnotes/week4">Week 4: On obviousness, and being a mere mortal</a>
 * <a href="/gitnotes/week3">Week 3: It all will fall right into place</a>
 * <a href="/gitnotes/week2">Week 2: In praise of leaving things behind</a>
@@ -12,11 +13,11 @@ $ gitnotes log --graph --oneline
 
 ## My public git.git branches
 
-Contains work on submodule add: [](https://github.com/tfidfwastaken/git/tree/submodule-add-in-c-v4)
+Contains work on submodule add: [link](https://github.com/tfidfwastaken/git/tree/submodule-helper-add-3a)  
 
 Other branches:  
-add-clone: [](https://github.com/tfidfwastaken/git/commits/submodule-add-in-c-add-clone-v3)
-add-config: [](https://github.com/tfidfwastaken/git/commits/submodule-add-in-c-add-config-v2)
+add-clone: [link](https://github.com/tfidfwastaken/git/commits/submodule-add-in-c-add-clone-v3)  
+add-config: [link](https://github.com/tfidfwastaken/git/commits/submodule-add-in-c-add-config-v2)  
 
 ## Git Development Starting Points 🏁
 
