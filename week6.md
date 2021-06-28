@@ -4,7 +4,7 @@
 
 This week I made some refinements to my [submodule add patch](https://github.com/tfidfwastaken/git/commits/submodule-helper-add-3a) after taking feedback from my mentors Christian Couder and Shourya Shukla, and also Kaartic Sivaraam (who at this point I consider a de facto mentor—thanks for all the help!).
 
-It's been a busy week for the Git list, and with the maintainer being offline this week, my [last patch](https://lore.kernel.org/git/20210615145745.33382-1-raykar.ath@gmail.com/) on the list has not not yet got too much attention. In these times, it's best to be patient. I have been advised by my mentors to wait until the next "What's cooking..." mail[^1], and take action accordingly.
+It's been a busy week for the Git list, and with the maintainer being offline this week, my [last patch](https://lore.kernel.org/git/20210615145745.33382-1-raykar.ath@gmail.com/) on the list has not yet got too much attention. In these times, it's best to be patient. I have been advised by my mentors to wait until the next "What's cooking..." mail[^1], and take action accordingly.
 
 So while that is blocked at the moment, I decided to start work on the other major part of my project, that is to convert `submodule update` to C, much in the same way. This functionality is a lot more interesting and complex compared to merely adding a submodule, and it can often be a source of [strange behaviour](https://lore.kernel.org/git/CAKjYmsELpf9r3bAJj_JUHgVegw_7z2KzyuR_6FYYngpC1XmNeg@mail.gmail.com/) and edge cases.
 
@@ -93,6 +93,24 @@ daemon.c
 ```
 
 So my question is: *how* does the `main()` function know which `cmd_main()` to call? From whatever I could understand from the makefile, all these files are linked together.
+
+**Update**: Felipe Contreras has pointed out to me that those files are not linked together. I'll leave his explanation here:
+
+> They are not all linked together.
+> 
+> Take for example `shell.c`, which will be used to generate `shell.o`, which is used here:
+> 
+>  `PROGRAM_OBJS += shell.o`
+> 
+> PROGRAM_OBJS is used here:
+> 
+>  `PROGRAMS += $(patsubst %.o,git-%$X,$(PROGRAM_OBJS))`
+> 
+> This means shell.o will be used to generate a program called git-shell.
+> 
+> But the "git" program will not use `PROGRAM_OBJS`, therefore it will not link `shell.o`.
+
+That explains it. I can now confirm that the `cmd_main()` that is called is only the one in `git.c`. If a builtin that has a separate executable like `git-shell` has been invoked, `git.c:cmd_main()` will take care of it by forking out a child process and executing the required program.
 
 ## Blooper of the week
 
