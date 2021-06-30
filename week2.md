@@ -4,7 +4,7 @@ Everything I do is built on top of the corpus of knowledge left behind by others
 
 There's always much to learn from both.
 
-My work with Git this week was made possible by a combination of both kinds of knowledge. I had to use several functions from Git's [`strbuf`](https://github.com/git/git/blob/master/strbuf.h) API, [`strvec`](https://github.com/git/git/blob/master/strvec.h) API and [`run-command`](https://github.com/git/git/blob/master/run-command.h) API, all documented as comments in their respective header files in the top level. These comments were the work of many contributors in the past. A deliberate attempt, knowing that some new developer many years down the line will be able to get their first start to the Git project, and maybe even their career.
+My work with Git this week was made possible by a combination of both kinds of knowledge. I had to use several functions from Git's [`strbuf`](https://github.com/git/git/blob/v2.32.0/strbuf.h) API, [`strvec`](https://github.com/git/git/blob/v2.32.0/strvec.h) API and [`run-command`](https://github.com/git/git/blob/v2.32.0/run-command.h) API, all documented as comments in their respective header files in the top level. These comments were the work of many contributors in the past. A deliberate attempt, knowing that some new developer many years down the line will be able to get their first start to the Git project, and maybe even their career.
 
 ### Putting cherries on top of someone else's cake
 

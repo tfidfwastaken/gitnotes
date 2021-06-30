@@ -12,7 +12,7 @@ What makes my life easier though, is that a lot of the hard parts [have already 
 
 ## Current strategy
 
-I'll be introducing a 'run-update-module' helper to replace [this bit of code](https://github.com/tfidfwastaken/git/blob/master/git-submodule.sh#L586-L649).
+I'll be introducing a 'run-update-module' helper to replace [this bit of code](https://github.com/git/git/blob/v2.32.0/git-submodule.sh#L586-L649).
 
 The main challenge in that portion is converting the `is_tip_reachable` and `fetch_in_submodule` shell functions. For the latter, it is quite clear the only way to make it work is to shell out a new child process and perform the fetch. For the former, it seemed like this should be something that should be easily doable with the internal APIs but unfortunately it isn't.
 
@@ -40,7 +40,7 @@ On the whole, this week felt slower than I'd have liked, but the project is stil
 
 Occasionally, I like casually touring the Git codebase. This time, I wanted to find out the entry point of all Git commands, and I was left a puzzled man.
 
-The entry point of Git is not in `git.c` as you may expect (although it was at one point), but in `common-main.c`. For reference, this is Git's (truncated) `main()` function:
+The entry point of Git is not in `git.c` as you may expect (although it was at one point), but in `common-main.c`. For reference, this is Git's (truncated) [`main()`](https://github.com/git/git/blob/ebf3c04b262aa27fbb97f8a0156c2347fecafafb/common-main.c#L26-L57) function:
 ```c
 int main(int argc, const char **argv)
 {

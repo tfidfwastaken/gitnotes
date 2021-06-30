@@ -4,7 +4,7 @@
 
 Since 5 is a nice round-ish number, I thought now would be a good time to summarise *everything* I have done so far, and then talk about what's cooking in my personal git.git.
 
-My short-term goal is to convert the [bulk of `cmd_add()` of `git-submodule.sh`](https://github.com/tfidfwastaken/git/blob/master/git-submodule.sh#L89-L308) from shell to C. By the 'bulk' I mean all the work after parsing those flags should be done by a call to a C helper, which will be called `submodule--helper add`. This pattern has already been applied to other converted functions such as `foreach`, `init`, etc.
+My short-term goal is to convert the [bulk of `cmd_add()` of `git-submodule.sh`](https://github.com/git/git/blob/v2.32.0/git-submodule.sh#L89-L308) from shell to C. By the 'bulk' I mean all the work after parsing those flags should be done by a call to a C helper, which will be called `submodule--helper add`. This pattern has already been applied to other converted functions such as `foreach`, `init`, etc.
 
 As you may have observed, that is a lot of lines to be changed. I had decided to avoid doing it in a big-bang kind of way where I send the whole conversion as one series. Instead, I started by converting parts of the shell code into various smaller helper subcommands written in C, so that I can get feedback on whether my general approach is correct.
 
