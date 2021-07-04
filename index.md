@@ -2,7 +2,8 @@
 
 <pre>
 $ gitnotes log --graph --oneline
-* (HEAD -> main) <a href="/gitnotes/week6">Week 6: On to update</a>
+* (HEAD -> main) <a href="/gitnotes/week7">Week 7: The effects of history</a>
+* <a href="/gitnotes/week6">Week 6: On to update</a>
 * <a href="/gitnotes/week5">Week 5: A nice round number</a>
 * <a href="/gitnotes/week4">Week 4: On obviousness, and being a mere mortal</a>
 * <a href="/gitnotes/week3">Week 3: It all will fall right into place</a>
