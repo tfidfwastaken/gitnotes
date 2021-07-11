@@ -82,6 +82,8 @@ if (update_data.init) {
 
 Right before the `init` invoked by the `for_each_listed_submodule()` function, I tacked on code that sets the `GIT_SUPER_PREFIX_ENVIRONMENT` environment variable to the recursive prefix, which should lead us to the right output.
 
+(I also understand those if statements look kind of awkward, I can fix the hackiness once I get it to work)
+
 But unfortunately this did not work. Some print debugging showed me that the value is set right upto this point in `init_submodule`:
 
 ```c
