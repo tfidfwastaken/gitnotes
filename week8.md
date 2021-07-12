@@ -112,7 +112,7 @@ When queried by the [`get_super_prefix()`](https://github.com/gitgitgadget/git/b
 
 ---
 
-UPDATE: I have found out the immediate cause of why the environment is not preserved. On another look at this `get_super_prefix()`:
+UPDATE: I have found out the immediate cause of why the environment variable is not being read properly. On another look at this `get_super_prefix()`:
 ```c
 const char *get_super_prefix(void)
 {
@@ -139,7 +139,7 @@ Another way is to change the `init_submodule()` code to be explicit about handli
 
 ## Other challenges
 
-There's a lot of other bugs, that I haven't looked at yet. I wanted to get this one out of the way first. But in general, the patch is starting to look large, where it took several seatings to get a review done. It does not help that `submodule update` is doing a lot more, especially with the recursive calls along with handling `init` when specified.
+There's a lot of other bugs, that I haven't looked at yet. I wanted to get this one out of the way first. But in general, the patch is starting to look large, the kind where it might take several seatings to get a review done. It does not help that `submodule update` is doing a lot more, especially with the recursive calls along with handling `init` when specified.
 
 Another thing worth working on, once this is out of the way is the structure of the data passed around in all the update-related functions. Currently I have a [giant struct](https://github.com/tfidfwastaken/git/blob/09dcb05c4035dba46aaaa62cd1f03fc271067cde/builtin/submodule--helper.c#L2044-L2077) sitting around carrying all the flags passed to the update command, as well as a lot of parameters that are needed to be handed over to `struct submodule_add_clone` for the parallel cloning operations.
 
