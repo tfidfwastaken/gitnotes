@@ -157,4 +157,4 @@ Most weeks breeze along fairly well, without too many issues, while some weeks a
 
 A key feature of days that went smoothly for me are the ones where I spend less time working, but that time spent would be during my peak of focus and productivity, thus having a lot "bang for the buck".
 
-Another important objective for me is to not burn out during all of this (a common phenomenon for a college student here, especially as of the last two years). I believe I am managing that fairly well, although the university's guerrila scheduling that is pervasive in these times threaten that. For the sake of my continued enthusiastic involvement in the Git community, I will ensure that those threats are not realised ;-)
+Another important objective for me is to not burn out during all of this (a common phenomenon for a college student here, especially as of the last two years). I believe I am managing that fairly well, although the university's guerrilla scheduling that is pervasive in these times threaten that. For the sake of my continued enthusiastic involvement in the Git community, I will ensure that those threats are not realised ;-)
