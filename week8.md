@@ -108,7 +108,28 @@ static void init_submodule(const char *path, const char *prefix,
 
 Also a note: the `displaypath` variable is the one that is ultimately printed wrong, and the immediate cause of my failing test. If you are curious about what `get_submodule_displaypath()` is doing, you can have a look [here](https://github.com/git/git/blob/211eca0895794362184da2be2a2d812d070719d3/builtin/submodule--helper.c#L253-L271).
 
-When queried by the [`get_super_prefix()`](https://github.com/gitgitgadget/git/blob/d486ca60a51c9cb1fe068803c3f540724e95e83a/environment.c#L237-L245) function, the answer is `(null)`. This boggles my mind to no end. The implementation is basically the same `getenv()` call?
+When queried by the [`get_super_prefix()`](https://github.com/gitgitgadget/git/blob/d486ca60a51c9cb1fe068803c3f540724e95e83a/environment.c#L237-L245) function, the answer is `(null)`. ~This boggles my mind to no end~ (see update). The implementation is basically the same `getenv()` call?
+
+---
+
+UPDATE: I have found out the immediate cause of why the environment is not preserved. On another look at this `get_super_prefix()`:
+```c
+const char *get_super_prefix(void)
+{
+	static int initialized;
+	if (!initialized) {
+		super_prefix = xstrdup_or_null(getenv(GIT_SUPER_PREFIX_ENVIRONMENT));
+		initialized = 1;
+	}
+	return super_prefix;
+}
+```
+
+The static variable `initialized` is already set by the time `get_submodule_displaypath()` is called, and thus the environment variable is not re-read, and the old value of NULL is returned.
+
+I am not sure how to tell Git that the environment variable has in fact been modified, and that it needs to be reinitialized. Maybe I am going about this whole thing wrong?
+
+---
 
 It is quite possible I am approaching this problem wrong, and I have narrowed my thinking because of me being in more of a rush than usual.
 
