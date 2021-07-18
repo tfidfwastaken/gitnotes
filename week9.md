@@ -91,6 +91,9 @@ submodule has happened, the Git internal machinery is not able to pick
 up the new state in the same run. I have been unable to determine why
 this is the case.
 
+Here's the (broken) branch that implements this:  
+https://github.com/tfidfwastaken/git/commits/submodule-helper-update-1a
+
 ### Passing the superprefix explicitly
 
 With my "obvious" solution failing, I instead resorted to a different solution, that can be seen [here](https://github.com/tfidfwastaken/git/commit/0ee268be35d19b147fffa870cdbc8e807969d4f7).
@@ -100,6 +103,9 @@ To summarize, it involves teaching `init_submodule()` to take an explicit `super
 Outcome: This makes all the tests pass, which is a relief.
 
 Even though I intend to settle on this solution, I would be happy to know from any mailing list readers about why my other attempt might have failed.
+
+Here's the branch that implements this:  
+https://github.com/tfidfwastaken/git/commits/submodule-helper-update-1c
 
 ## What next?
 
