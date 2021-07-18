@@ -2,7 +2,8 @@
 
 <pre>
 $ gitnotes log --graph --oneline
-* (HEAD -> main) <a href="/gitnotes/week8">Week 8: A rocky path</a>
+* (HEAD -> main) <a href="/gitnotes/week9">Week 9: A solution, just in time</a>
+* <a href="/gitnotes/week8">Week 8: A rocky path</a>
 * <a href="/gitnotes/week7">Week 7: The effects of history</a>
 * <a href="/gitnotes/week6">Week 6: On to update</a>
 * <a href="/gitnotes/week5">Week 5: A nice round number</a>
@@ -16,6 +17,7 @@ $ gitnotes log --graph --oneline
 ## My public git.git branches
 
 Contains work on submodule add: [link](https://github.com/tfidfwastaken/git/tree/submodule-helper-add-3a)  
+Contains work on submodule update: [link](https://github.com/tfidfwastaken/git/tree/submodule-helper-update-1c)  
 
 Other branches:  
 add-clone: [link](https://github.com/tfidfwastaken/git/commits/submodule-add-in-c-add-clone-v3)  
