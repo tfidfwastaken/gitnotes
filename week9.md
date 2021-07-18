@@ -20,7 +20,7 @@ So here are the various solutions I tried.
 
 This seemed like the most obvious thing to do, because a lot of the other commands that recursed into submodules were implemented this way. This also lets the default `git` handler take care of my superprefix. The only downside is the cost associated with spawning a new subprocess.
 
-*Outcome*: It broke a *lot* of tests. What seemed like the most straightforward solution created very strange behaviour that I have still not been able to properly understand.
+Outcome: It broke a *lot* of tests. What seemed like the most straightforward solution created very strange behaviour that I have still not been able to properly understand.
 
 The strange behaviour is best demonstrated by the test case t7400.56.
 
@@ -63,7 +63,7 @@ if (!is_submodule_active(the_repository, ce->name)) {
 }
 ```
 
-This if branch should not have got triggered, because the previously initialized submodule is obviously active. I have verified this by manually running the commands and checking the git config file, and it is indeed marked as `active = true`.
+This branch should not have got triggered, because the previously initialized submodule is obviously active. I have verified this by manually running the commands and checking the git config file, and it is indeed marked as `active = true`.
 
 And here is the other weird part. If I run the same `update` command again ie, modify the test case to this:
 
@@ -97,7 +97,7 @@ With my "obvious" solution failing, I instead resorted to a different solution, 
 
 To summarize, it involves teaching `init_submodule()` to take an explicit `superprefix` argument that is received from the `struct init_cb` callback data. The nice thing about this method is it allows me to avoid spawning a subprocess. I also refactored `get_submodule_displaypath()` by splitting off a `do_get_submodule_displaypath()` that lets me have greater control of the superprefix parameter, rather than relying on whatever `get_super_prefix()` returns.
 
-This makes all the tests pass, which is a relief.
+Outcome: This makes all the tests pass, which is a relief.
 
 Even though I intend to settle on this solution, I would be happy to know from any mailing list readers about why my other attempt might have failed.
 
