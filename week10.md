@@ -42,7 +42,7 @@ Early on, I quite liked what [nasamuffin had to say about the patch flow](https:
 
 I haven't followed this suggestion too religiously, but it has worked generally well for me. But other than that, my method of working has been largely ad-hoc and unsystematic.
 
-The tools, systems, workflows and practices of individual mailing list developers have not been well-documented anywhere at least from my brief searching. I think it would be valuable for future contributors, especially from backgrounds like mine, where I had never touched email contributions before, but now have to send patches that way quite regularly.
+The tools, systems, workflows and practices of individual mailing list developers have not been well-documented anywhere at least from my brief searching. I think having these insights would be valuable for future contributors, especially from backgrounds like mine, where I had never touched email contributions before, but now have to send patches that way quite regularly.
 
 So I'd like to ask Git Developers reading this:  
 What tools, systems and workflows do you find valuable in your day-to-day work? In particular I'd be happy getting insights like:
