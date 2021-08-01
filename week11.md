@@ -69,6 +69,6 @@ It was starting to become rather clear to me that I might have to configure my e
 
 How do I know if a new mail arrives without an inbox? I have setup a query for seeing "all mail that arrived today and addressed to me", and "all mail that arrived this week and addressed to me".
 
-So far it has served me well, and my emails don't bounce anymore.
+So far it has served me well, and my emails don't bounce anymore. (Update: spoke too soon. Ironically sharing this post bounced. Thankfully this was easy to diagnose and fix.)
 
 I also have achieved the easiest way to reach inbox zero—remove the inbox altogether ;-)
