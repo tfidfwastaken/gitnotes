@@ -4,7 +4,7 @@
 
 This week's update will be relatively short, partly because I will be out of town and juggling multiple things this week, and also because I am saving up for the larger final report ;-)
 
-This week I re-rolled my [`run-update-procedure`](https://lore.kernel.org/git/20210813075653.56817-1-raykar.ath@gmail.com/) patch. I was tempted to also send out my series that [converts the rest of `submodule update`](https://github.com/tfidfwastaken/git/tree/submodule-update-list-1) to C, but it is quite a big series, and since it is release week for Git, I felt I'd be a little more patient, and wait for `run-update-procedure` to get picked up first rather than send a storm of all these related series at once.
+This week I re-rolled my [`run-update-procedure`](https://lore.kernel.org/git/20210813075653.56817-1-raykar.ath@gmail.com/) patch. I was tempted to also send out my series that [converts the rest of `submodule update`](https://github.com/tfidfwastaken/git/tree/submodule-update-list-1) to C, but it is quite a big series, and it doesn't help that we are already at the release week for Git. I felt I should be a little more patient, and wait for `run-update-procedure` to get picked up first rather than send a storm of all these related series at once.
 
 In other news, my attempt to making `submodule` a fully C builtin is shaping up well. Here's a brief of how the transition will work:
 
