@@ -83,6 +83,8 @@ Felipe Contreras, who created the very useful `git-related` tool that helped me 
 
 Bagas Sanjaya for helping me refine some of my weekly blogs, which has made them clearer.
 
+Jeff King cleaned up one of my patches after it got merged to master.
+
 Michael Haggerty wrote the excellent `git-test` tool that stopped a lot of my messy patch series making it to the list.
 
 And of course, my mentors, Christian Couder, Kaartic Sivaraam, and Shourya Shukla get a boatload of credit for their hard to quantify contributions to my work and to Git.
@@ -91,9 +93,9 @@ I also would like to mention the great work done by the other intern for this Su
 
 ## What's next?
 
-I have so much to learn and explore, and I will fondly remember my time at Git as the first significant milestone for that journey. I will still continue the [leftover bits](https://atharvaraykar.me/gitnotes/final-report.html#whats-next) of my work. I want to leave some kind of residual value beyond my active involvement in these last few months. I hope to set aside some time  mentoring and growing the community in the future.
+I have so much to learn and explore, and I will fondly remember my time at Git as the first significant milestone for that journey. I will still continue the [leftover bits](https://atharvaraykar.me/gitnotes/final-report.html#whats-next) of my work. I want to leave some kind of residual value beyond my active involvement in these last few months. I hope to set aside some time  mentoring and growing the community in the future. I will be spending more time diversifying my knowledge and learning other things as well.
 
-This blog will also continue, with a renewed purpose. I will be writing down important things I learnt in my time and bugs that new contributors could work on. I believe that writing guides and making contributions easier has some of the best effort-to-impact characteristics that I am looking for.
+This blog will continue, with a renewed purpose. I will be writing down important things I learnt in my time and bugs that new contributors could work on. I believe that writing guides and making contributions easier has some of the best effort-to-impact characteristics that I am looking for.
 
 ## How to contact me (and other plugs)
 
