@@ -71,7 +71,7 @@ Junio C Hamano, the Git maintainer, has a reputation for being cool-headed and p
 
 Ævar Arnfjörð Bjarmason also reviewed my work, and pointed me to some helpful resources for debugging Git.
 
-Emily Shaffer, responsible for the excellent "MyFirstContribution" documentation, helped me break into Git development in the first place.
+Emily Shaffer was responsible for the excellent "MyFirstContribution" documentation that helped me break into Git development in the first place.
 
 Phillip Wood and Johannes Sixt, along with Ævar reviewed my microproject, which was my first Git contribution.
 
