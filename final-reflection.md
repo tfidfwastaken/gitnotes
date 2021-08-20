@@ -1,6 +1,6 @@
 # Reflections on Working With the Git Community
 
-I got to work and "intern" for the Git Community in the Summer of ’21. This was the first "real" work I have done in my career in Computers. The only thing that can compete when it comes to beginnings is starting your day with a South Indian breakfast [(1)](#footnotes).
+I got to work and "intern" for the Git Community in the Summer of ’21. This was the first "real" work I have done in my career in Computers. The only thing that can compete with this when it comes to great beginnings is starting your day with a South Indian breakfast [(1)](#footnotes).
 
 ![A South Indian Breakfast](https://foodhallcookerystudio.com/wp-content/uploads/2019/02/7th-march-south-indian-breakfast-1024x805.jpg)
 
