@@ -97,7 +97,7 @@ This blog will also continue, with a renewed purpose. I will be writing down imp
 
 ## How to contact me (and other plugs)
 
-Feel free to contact me if:
+Feel free to contact me (raykar.ath@gmail.com) if:
 
 - You are a new contributor looking for specific guidance or mentorship.
 - You are hiring, and need someone who is passionate, persevering, and enjoys hard problems. I especially <3 working on Open Source projects.
