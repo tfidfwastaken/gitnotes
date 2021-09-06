@@ -2,7 +2,10 @@
 
 <pre>
 $ gitnotes log --graph --oneline
-* (HEAD -> main) <a href="/gitnotes/week13">Week 13: Preparing for the wrap up</a>
+* <a href="/gitnotes/final-reflection">Reflections on Working With the Git Community</a>
+| * <a href="/gitnotes/final-report">Porting Git Submodules to C: The Technical Report</a>
+|/
+* <a href="/gitnotes/week13">Week 13: Preparing for the wrap up</a>
 * <a href="/gitnotes/week12">Week 12: Nearing the finish line</a>
 * <a href="/gitnotes/week11">Week 11: A slump</a>
 * <a href="/gitnotes/week10">Week 10: Patch juggling and Email woes</a>
@@ -20,12 +23,11 @@ $ gitnotes log --graph --oneline
 
 ## My public git.git branches
 
-Contains work on submodule add: [link](https://github.com/tfidfwastaken/git/tree/submodule-helper-add-3a)  
-Contains work on submodule update: [link](https://github.com/tfidfwastaken/git/tree/submodule-helper-update-1c)  
+The useful ones, at least:
 
-Other branches:  
-add-clone: [link](https://github.com/tfidfwastaken/git/commits/submodule-add-in-c-add-clone-v3)  
-add-config: [link](https://github.com/tfidfwastaken/git/commits/submodule-add-in-c-add-config-v2)  
+Contains my latest work on `submodule update`: [](https://github.com/tfidfwastaken/git/tree/submodule-update-list-1)  
+Contains my latest work on `submodule add`: [](https://github.com/tfidfwastaken/git/tree/submodule-helper-add-list-5)  
+Contains my latest work on converting submodule into a C builtin: [](https://github.com/tfidfwastaken/git/tree/submodule-make-builtin-2)  
 
 ## Git Development Starting Points 🏁
 

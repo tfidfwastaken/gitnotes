@@ -2,9 +2,11 @@
 
 ## The Project, briefly explained
 
+_Also see: [Reflections on Working With the Git Community](final-report)_
+
 Git has historically had many components implemented in the form of shell scripts. This was less than ideal for several reasons:
 
-- Portability: Non-POSIX systems like Windows don’t play nice with shell script commands like grep, cd and printf, to name a few, and these commands have to be reimplemented for the system. There are also POSIX to Windows path conversion issues.
+- Portability: Non-POSIX systems like Windows don’t play nice with shell script commands like grep, cd and printf, to name a few, and these commands have to be emulated for that system, which is costly and not ideal. There are also POSIX to Windows path conversion issues.
 - No direct access to plumbing: Shell commands do not have direct access to the low level Git API, and a separate shell is spawned to just to carry out their operations.
 - Performance: Shell scripts tend to create a lot of child processes which slows down the functioning of these commands, especially with large repositories.
 
