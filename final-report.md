@@ -2,7 +2,7 @@
 
 ## The Project, briefly explained
 
-_Also see: [Reflections on Working With the Git Community](final-report)_
+_Also see: [Reflections on Working With the Git Community](final-reflection)_
 
 Git has historically had many components implemented in the form of shell scripts. This was less than ideal for several reasons:
 
