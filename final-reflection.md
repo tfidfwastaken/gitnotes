@@ -103,8 +103,8 @@ This blog will continue, with a renewed purpose. I will be writing down importan
 
 Feel free to contact me (raykar.ath@gmail.com) if:
 
-- You are a new contributor looking for specific guidance or mentorship.
-- You are hiring, and need someone who is passionate, persevering, and enjoys hard problems. I especially <3 working on Open Source projects.
+- You are a new contributor looking for specific guidance or mentorship. Even if I am busy, I'll be happy to give pointers to help you with Git contributions.
+- ~~You are hiring, and need someone who is passionate, persevering, and enjoys hard problems. I especially <3 working on Open Source projects.~~ Not required at the moment!
 
 If you are a college student from India, have a look at the community for bottom-up learning I am trying to build at [Universities for FOSS, India](https://unifoss.github.io/).
 

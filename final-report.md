@@ -53,8 +53,8 @@ From "What's Cooking in git.git", 16 Aug 2021:
 ```
 
 ### Conversion of `submodule update`:
-* The first part (run-update-procedures) has been `seen`, reviews still ongoing. Link to patch: [`ar/submodule-run-update-procedure`](https://lore.kernel.org/git/20210813075653.56817-1-raykar.ath@gmail.com/)
-* The second part of this conversion has not been sent to the list yet, and needs reviewing. Source code for this change can be found [here](https://github.com/tfidfwastaken/git/commits/submodule-update-list-1).
+* (**Update**: Now shipping as of Git 2.34!) The first part (run-update-procedures) has been `seen`, reviews still ongoing. Link to patch: [`ar/submodule-run-update-procedure`](https://lore.kernel.org/git/20210813075653.56817-1-raykar.ath@gmail.com/)
+* (**Update**: Has been sent to the list now, stalled due to other conflicting changes in submodules.) The second part of this conversion has not been sent to the list yet, and needs reviewing. Source code for this change can be found [here](https://github.com/tfidfwastaken/git/commits/submodule-update-list-1).
 
 From "What's Cooking in git.git", 16 Aug 2021:
 ```
